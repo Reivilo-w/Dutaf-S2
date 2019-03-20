@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<title>Dutaf | Budget</title>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</head>
+	<body>
+	<!--START-- | Navigation |-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<a class="navbar-brand" href="#">Dutaf</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Accueil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="catalogue.php">Catalogue</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="form_budget.html">Petit Budget</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin/gestion.php">Privé</a>
+					</li>
+			</div>
+		</nav>
+	<!--END-- | Navigation | -->
+
+	<!--START-- | Content |-->
+	<div class="container">
+		<div class="row my-5 d-flex justify-content-around" style="position: relative; top: 27px;">
+			<div class="col-6">
+				<form action="budget_art.php" method="post">
+					<div class="form-group">
+						<label for="budget">Budget</label>
+						<input type="number" class="form-control" id="budget" aria-describedby="budget" placeholder="Entrez votre budget" name="primax">
+					</div>
+					<button type="submit" class="btn btn-primary btn-block">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--END-- | Content | -->
+
+	<!--START-- | Script Sources | -->
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!--END-- | Script Sources | -->
+	</body>
+</html>
